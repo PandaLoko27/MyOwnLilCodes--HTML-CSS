@@ -1,4 +1,4 @@
-# 🎨 MyOwnLilCodes--HTML-CSS
+# 🎨 MyOwnLilCodes--HTML/CSS
 
 Bem-vindo ao **MyOwnLilCodes--HTML-CSS**!  
 Este repositório reúne meus códigos e projetos desenvolvidos com **HTML** e **CSS**, criados com o objetivo de treinar, experimentar e compartilhar meus aprendizados e criações.
