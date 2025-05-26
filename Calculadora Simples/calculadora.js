@@ -1,5 +1,3 @@
-// javascript da calculadora
-
 function appendToDisplay(value) {
     document.getElementById('display').value += value;
 }
