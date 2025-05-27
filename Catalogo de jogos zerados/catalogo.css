@@ -1,0 +1,172 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #000000;
+  color: #000000;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  background: #c7ffb6;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #000000;
+}
+
+form {
+  display: grid;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+input, button {
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+input {
+  border: 1px solid #d1d5db;
+  background: #f3f4f6;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  border-color: #37ff00;
+  outline: none;
+}
+
+button {
+  background: linear-gradient(90deg, #000000, #37ff00);
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(123, 241, 99, 0.4);
+}
+
+.games-list {
+  display: grid;
+  gap: 20px;
+}
+
+.game-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #f3f4f6;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  opacity: 0;
+  transform: scale(0.95);
+  animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.game-card.removing {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.game-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #e5e7eb;
+}
+
+.game-details h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+.game-details p {
+  margin-bottom: 4px;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.action-buttons button {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.action-buttons .edit-btn {
+  background: #000000;
+}
+
+.action-buttons .edit-btn:hover {
+  background: #37ff00;
+}
+
+.action-buttons .remove-btn {
+  background: #000000;
+}
+
+.action-buttons .remove-btn:hover {
+  background: #dc2626;
+}
+
+@media (max-width: 600px) {
+  .game-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .game-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .action-buttons {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
