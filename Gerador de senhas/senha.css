@@ -1,0 +1,73 @@
+/* style.css */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fefefe;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #c4c4c4;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.options label {
+  display: block;
+  margin: 10px 0;
+  text-align: left;
+}
+
+input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-left: 10px;
+}
+
+button {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #bab700;
+}
+
+.result {
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.result input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.result button {
+  padding: 8px 12px;
+}
