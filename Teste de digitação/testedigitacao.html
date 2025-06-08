@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste de Velocidade de Digitação</title>
+  <link rel="stylesheet" href="teste.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Teste de Velocidade de Digitação</h1>
+    <p id="textoExercicio"></p>
+    <textarea id="entradaUsuario" placeholder="Digite aqui..." disabled oninput="verificarConclusao()"></textarea><br>
+    <button onclick="iniciarTeste()">Iniciar Teste</button>
+    <div id="resultado"></div>
+    <div id="historico">
+      <h3>Histórico de Desempenho</h3>
+      <ul id="listaHistorico"></ul>
+    </div>
+  </div>
+  <script src="teste.js"></script>
+</body>
+</html>
