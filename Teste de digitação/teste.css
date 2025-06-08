@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff94d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+.container {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  max-width: 600px;
+  text-align: center;
+}
+#textoExercicio {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 5px;
+}
+#entradaUsuario {
+  width: 100%;
+  height: 100px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+#resultado {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+#historico {
+  margin-top: 2rem;
+  text-align: left;
+}
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
